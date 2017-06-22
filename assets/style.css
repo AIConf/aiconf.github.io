@@ -8,6 +8,16 @@ body {
   font-family: 'Catamaran', sans-serif;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
 header {
   height: 8vh;
   width: 100%;
@@ -248,11 +258,6 @@ nav ul li a:hover {
   left: 50%;
   transform: translateX(-50%);
   padding: 2em 0;
-}
-
-.venues h2 {
-  font-size: 2em;
-  font-weight: 300;
 }
 
 .venue-box {

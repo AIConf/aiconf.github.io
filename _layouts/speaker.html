@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<section class="speaker-info">
+  <h1>{{page.title}}</h1>
+  <h2>{{page.role}} at {{page.organisation}}</h2>
+</section>
+
+<div class="speaker-details">
+  <section class="speaker-image">
+    <img src="{{page.img}}" alt="{{page.title}}">
+  </section>
+  <section class="speaker-events">
+    {% for event in page.events %}
+    <article class="event">
+      <h3><span class="event-type">{{event.type}}</span> {{event.title}}</h3>
+      <p>{{ event.date | date: "%a" }}.
+        {% assign d = event.date | date: "%-d" %}
+        {% case d %}
+          {% when '1' or '21' or '31' %}{{ d }}st
+          {% when '2' or '22' %}{{ d }}nd
+          {% when '3' or '23' %}{{ d }}rd
+          {% else %}{{ d }}th
+        {% endcase %}
+           {{ event.date | date: "%B" }} {{ event.date | date: "%Y" }}</p>
+    </article>
+    {% endfor %}
+  </section>
+</div>
+
+<section class="speaker-personal">
+  <article class="speaker-about">
+    <h3>About {{page.title}}</h3>
+
+    <p>{{page.about}}</p>
+  </article>
+
+  <article class="speaker-web">
+    <h3>On The Web</h3>
+    <ul>
+      {% if page.website %}
+      <li>Website: <a href="{{page.website}}">{{page.website}}</a></li>
+      {% endif %}
+      {% if page.twitter %}
+      <li>Twitter: <a href="http://twitter.com/{{page.twitter}}">@{{page.twitter}}</a></li>
+      {% endif %}
+      {% if page.youtube %}
+      <li>YouTube: <a href="{{page.youtube}}">{{page.youtube}}</a></li>
+      {% endif %}
+    </ul>
+  </article>
+</section>

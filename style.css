@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+}
+
+header {
+  height: 8vh;
+  width: 100%;
+  float: left;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.brand {
+  color: rgb(255,255,255);
+  padding: 0 1rem;
+  float: left;
+  letter-spacing: .05em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.brand a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 2em;
+}
+
+nav {
+  float: right;
+  margin-right: 5em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 2em;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+
+nav ul li a:hover {
+  color: rgb(196,0,35);
+}
+
+.ai {
+  color: rgb(196,0,35);
+}
+
+.splash {
+  height: 90vh;
+  background: url(img/cedarssplash.png) no-repeat center center;
+  background-size: cover;
+}
+
+.splash-info {
+  margin: 0 7em;
+  padding: 3em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  background: rgba(0,0,0,.4);
+  background: linear-gradient(to bottom right, rgba(0,0,0,.7), rgba(0,0,0,.1));
+}
+
+.event-time {
+  line-height: normal;
+  font-size: 2em;
+}
+
+.event-title {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.event-strapline {
+  line-height: normal;
+  font-size: 1.7em;
+}
+
+.tile-info {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3em;
+  font-weight: bold;
+}
+
+.tile-info h2 {
+  color: rgb(196,0,35);
+}
+
+.tile-info {
+  color: rgb(0,0,0);
+}
+
+.tile-split {
+  min-height: 4vh;
+}
+
+.tile-image, .tile-text {
+  width: 5wh;
+  float: left;
+}
+
+footer {
+  clear: both;
+}

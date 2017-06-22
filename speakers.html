@@ -1,0 +1,25 @@
+---
+permalink: /speakers/
+layout: default
+title: Speaker
+---
+<main>
+  <section class="page-title" id="speakers-page-title">
+    <div class="page-title-text">
+      <h2>Our speakers will <em>literally</em> rock your world</h2>
+      <p>Seriously. They know what they're talking about.</p>
+    </div>
+  </section>
+
+  <section class="speaker-list">
+  {% assign items = site.speakers | sort: 'order' %}
+  {% for speaker in items %}
+      <article class="speaker">
+        <a href="/speakers/{{speaker.page-name}}"><img src="{{speaker.img}}" alt="{{speaker.title}}"></a>
+        <h3><a href="/speakers/{{speaker.page-name}}">{{speaker.title}}</a></h3>
+        <p>{{speaker.role}} : {{speaker.organisation}}</p>
+      </article>
+    </a>
+  {% endfor %}
+  </section>
+</main>

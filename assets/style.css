@@ -183,7 +183,7 @@ nav ul li a:hover {
 }
 
 #venues-page-title {
-  background: url(/assets/img/cedars_eavis.png) no-repeat center center;
+  background: url(/assets/img/cedars_banner.jpg) no-repeat center center;
   background-size: cover;
   color: rgb(255,255,255);
   text-align: left;
@@ -258,6 +258,15 @@ nav ul li a:hover {
   left: 50%;
   transform: translateX(-50%);
   padding: 2em 0;
+}
+
+.speaker-web ul {
+  list-style: none;
+}
+
+.speaker-web-title {
+  display: inline-block;
+  width: 5em;
 }
 
 .venue-box {

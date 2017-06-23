@@ -39,13 +39,13 @@ layout: default
     <h3>On The Web</h3>
     <ul>
       {% if page.website %}
-      <li>Website: <a href="{{page.website}}">{{page.website}}</a></li>
+      <li><span class="speaker-web-title">Website:</span> <a href="{{page.website}}">{{page.website}}</a></li>
       {% endif %}
       {% if page.twitter %}
-      <li>Twitter: <a href="http://twitter.com/{{page.twitter}}">@{{page.twitter}}</a></li>
+      <li><span class="speaker-web-title">Twitter:</span> <a href="http://twitter.com/{{page.twitter}}">@{{page.twitter}}</a></li>
       {% endif %}
       {% if page.youtube %}
-      <li>YouTube: <a href="{{page.youtube}}">{{page.youtube}}</a></li>
+      <li><span class="speaker-web-title">YouTube:</span> <a href="{{page.youtube}}">{{page.youtube}}</a></li>
       {% endif %}
     </ul>
   </article>

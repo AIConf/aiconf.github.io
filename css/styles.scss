@@ -28,10 +28,17 @@
   transform: perspective(1px) translateY(-50%);
 }
 
-// @include vertical-align();
+@mixin horizontal-align($position: relative) {
+  position: $position;
+  left: 50%;
+  transform: perspective(1px) translateX(-50%);
+}
+
 
 //Colour definitions
 
+$white: rgb(255,255,255);
+$black: rgb(0,0,0);
 $monza: rgb(196,0,35);
 $midnight: rgb(0,27,71);
 
@@ -67,7 +74,7 @@ h3 {
 #speakers-page-title {
   background: url(/assets/img/speakers_banner.jpg) no-repeat center center;
   background-size: cover;
-  color: rgb(255,255,255);
+  color: $white;
   text-align: right;
   padding: 0 4em 0 0;
 }
@@ -75,7 +82,7 @@ h3 {
 #venues-page-title {
   background: url(/assets/img/cedars_banner.jpg) no-repeat center center;
   background-size: cover;
-  color: rgb(255,255,255);
+  color: $white;
   text-align: left;
   text-shadow: 1px 1px 5px rgb(123,123,123);
   padding: 0 0 0 8em;
@@ -85,11 +92,11 @@ header {
   height: 8vh;
   width: 100%;
   float: left;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba($black,0.4);
 }
 
 .brand {
-  color: rgb(255,255,255);
+  color: $white;
   padding: 0 1rem;
   float: left;
   letter-spacing: .1em;
@@ -108,7 +115,7 @@ nav {
   float: right;
   margin-right: 5em;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: $white;
   @include vertical-align();
 }
 
@@ -124,7 +131,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(255,255,255);
+  color: $white;
 }
 
 nav ul li a:hover {
@@ -150,9 +157,9 @@ nav ul li a:hover {
 .splash-info {
   margin: 0 7em;
   padding: 3em;
-  color: rgb(255, 255, 255);
-  background: rgba(0,0,0,.4);
-  background: linear-gradient(to bottom right, rgba(0,0,0,.7), rgba(0,0,0,.1));
+  color: $white;
+  background: rgba($black,.4);
+  background: linear-gradient(to bottom right, rgba($black,.7), rgba($black,.1));
   @include vertical-align();
 }
 
@@ -181,7 +188,7 @@ nav ul li a:hover {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  color: rgb(0,0,0);
+  color: $black;
 }
 
 .tiles h2 {
@@ -208,7 +215,7 @@ nav ul li a:hover {
   flex: 1 0px;
   height: 100vh;
   background-color: $midnight;
-  color: rgb(255,255,255);
+  color: $white;
 }
 
 .tile-info {
@@ -264,11 +271,11 @@ nav ul li a:hover {
 
 .speaker a {
   text-decoration: none;
-  color: rgb(196,0,35);
+  color: $monza;
 }
 
 .speaker a:hover {
-  color: rgb(224,0,41);
+  color: lighten($monza, 10%);
 }
 
 .speaker-info {
@@ -276,35 +283,55 @@ nav ul li a:hover {
 }
 
 .speaker-info h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 300;
   padding: 0;
   margin: 0;
+
+  @include for-tablet-landscape-up {
+    font-size: 4em;
+  }
 }
 
 .speaker-info h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
   color: rgb(172,172,172);
+
+  @include for-tablet-landscape-up {
+    font-size: 2em;
+  }
 }
 
 .speaker-details, .speaker-personal {
   display: flex;
+  flex-direction: column;
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+  }
 }
 
 .speaker-image, .speaker-events, .speaker-about, .speaker-web {
   flex: 1;
-  flex-basis: 50%;
+  flex-basis: 100%;
   min-height: 50vh;
-  padding: 2em;
+  padding: 1em;
+
+  @include for-tablet-landscape-up {
+    flex-basis: 50%;
+    padding: 2em;
+  }
 }
 
 .speaker-image img {
-  position: relative;
-  width: 60%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 80%;
   padding: 2em 0;
+  @include horizontal-align();
+
+  @include for-tablet-landscape-up {
+    width: 70%;
+  }
 }
 
 .speaker-web ul {
@@ -359,9 +386,10 @@ footer {
   clear: both;
   border-top: .5em solid $monza;
   display: flex;
+  flex-direction: column;
 
-  @include for-desktop-up {
-
+  @include for-tablet-landscape-up {
+    flex-direction: row;
   }
 }
 

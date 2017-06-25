@@ -36,6 +36,21 @@
   }
 }
 
+.splash {
+  height: 100vh;
+  background: url(/assets/img/cedarssplash.png) no-repeat center center;
+  background-size: cover;
+}
+
+.splash-info {
+  margin: 0 7em;
+  padding: 3em;
+  color: rgb(255, 255, 255);
+  background: rgba(0,0,0,.4);
+  background: linear-gradient(to bottom right, rgba(0,0,0,.7), rgba(0,0,0,.1));
+  @include vertical-align();
+}
+
 .speaker {
   flex: 0 1 100%;
   margin: 0.5em 0;
@@ -57,6 +72,45 @@
     flex: 0 1 calc(20% - 1em);
     margin: 0.5em;
   }
+}
+
+.venue-box {
+  display: flex;
+}
+
+.venue-text, .venue-img {
+  flex: 1;
+  flex-basis: 50%;
+  min-height: 50vh;
+}
+
+.venue-text {
+  padding: 2em;
+}
+
+#venue-cedars {
+  background: url(/assets/img/cedars_foyer.png) no-repeat center center;
+  background-size: cover;
+}
+
+#venue-quilter {
+  background: url(/assets/img/cedars_meeting.png) no-repeat center center;
+  background-size: cover;
+}
+
+#venue-cathedral {
+  background: url(/assets/img/cath_aerial.png) no-repeat center center;
+  background-size: cover;
+}
+
+#venue-map {
+  background: url(/assets/img/cath_aerial.png) no-repeat center center;
+  background-size: cover;
+}
+
+#venue-nearby {
+  background: url(/assets/img/cath_aerial.png) no-repeat center center;
+  background-size: cover;
 }
 
 footer {

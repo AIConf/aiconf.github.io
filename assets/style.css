@@ -191,20 +191,6 @@ nav ul li a:hover {
   padding: 0 0 0 8em;
 }
 
-.speaker-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2em 4em;
-}
-
-.speaker {
-  flex: 0 1 calc(20% - 1em);
-  text-align: center;
-  justify-content: space-between;
-  margin: 0.5em;
-  background-color: rgb(220,220,220);
-}
-
 .speaker img {
   width: 100%;
   filter: grayscale(1);
@@ -306,33 +292,4 @@ nav ul li a:hover {
 #venue-nearby {
   background: url(/assets/img/cath_aerial.png) no-repeat center center;
   background-size: cover;
-}
-
-footer {
-  clear: both;
-  border-top: .5em solid rgb(196,0,35);
-  display: flex;
-}
-
-#footer-logo {
-  flex: 1;
-  flex-basis: 33%;
-  padding: 1em;
-}
-
-#footer-content {
-  flex: 1;
-  flex-basis: 33%;
-  padding: 1em;
-}
-
-#footer-signup {
-  flex: 1;
-  padding: 1em;
-  flex-basis: 33%;
-}
-
-footer .logo {
-  height: 15vh;
-  margin: auto;
 }

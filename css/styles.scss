@@ -1,0 +1,101 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+.speaker-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 2em;
+
+  @include for-desktop-up {
+    margin: 2em 4em;
+  }
+}
+
+.speaker {
+  flex: 0 1 100%;
+  margin: 0.5em 0;
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgb(220,220,220);
+
+  @include for-tablet-portrait-up {
+    flex: 0 1 calc(33% - 1em);
+    margin: 0.5em;
+  }
+
+  @include for-tablet-landscape-up {
+    flex: 0 1 calc(25% - 1em);
+    margin: 0.5em;
+  }
+
+  @include for-desktop-up {
+    flex: 0 1 calc(20% - 1em);
+    margin: 0.5em;
+  }
+}
+
+footer {
+  clear: both;
+  border-top: .5em solid rgb(196,0,35);
+  display: flex;
+
+  @include for-desktop-up {
+
+  }
+}
+
+#footer-logo {
+  flex: 1;
+  padding: 1em;
+  flex-basis: 100%;
+
+  @include for-desktop-up {
+    flex-basis: 33%;
+  }
+}
+
+#footer-content {
+  flex: 1;
+  flex-basis: 100%;
+  padding: 1em;
+
+  @include for-desktop-up {
+    flex-basis: 33%;
+  }
+}
+
+#footer-signup {
+  flex: 1;
+  padding: 1em;
+  flex-basis: 100%;
+
+  @include for-desktop-up {
+    flex-basis: 33%;
+  }
+}
+
+footer .logo {
+  height: 15vh;
+  margin: auto;
+
+  @include for-desktop-up {
+
+  }
+}

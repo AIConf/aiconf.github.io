@@ -161,6 +161,11 @@ nav ul li a:hover {
   background: rgba($black,.4);
   background: linear-gradient(to bottom right, rgba($black,.7), rgba($black,.1));
   @include vertical-align();
+
+  @include for-phone-only{
+    margin: 0 2em;
+    padding: 1.5em;
+  };
 }
 
 .ai {
@@ -207,15 +212,23 @@ nav ul li a:hover {
 
 .tile-split {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+  }
 }
 
 .tile-text, .tile-image {
-  flex: 1 0px;
-  height: 100vh;
+  flex: 1;
+  flex-basis: 50%;
   background-color: $midnight;
   color: $white;
+  height: 40vh;
+
+  @include for-tablet-landscape-up {
+    height: 100vh;
+  }
 }
 
 .tile-info {

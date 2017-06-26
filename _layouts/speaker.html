@@ -13,7 +13,7 @@ layout: default
   <section class="speaker-events">
     {% for event in page.events %}
     <article class="event">
-      <h3><span class="event-type">{{event.type}}</span> {{event.title}}</h3>
+      <h3><span class="event-type type-{{event.type}}">{{event.type}}</span> {{event.title}}</h3>
       <p>{{ event.date | date: "%a" }}.
         {% assign d = event.date | date: "%-d" %}
         {% case d %}

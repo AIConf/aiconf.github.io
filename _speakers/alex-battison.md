@@ -8,6 +8,8 @@ role: Senior Deputy Head
 organisation: Lord Wandsworth College
 twitter:
 website: https://wells.cathedral.school
+about: Alex has worked with the Department for Education in the UK and the National College for Teaching and Leadership as a Specialist Leader of Education and gives presentations at various conferences in the UK and overseas.  
+He has a Masters degree from St Anne’s College, Oxford, in Learning and Teaching, writes for the Times Educational Supplement and am mentored as a leader and educator by ex-England Rugby Coach Brian Ashton MBE.
 events:
   - type: workshop
     title: Performance and Intellectual Character - nothing else matters

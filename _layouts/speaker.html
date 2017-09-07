@@ -13,7 +13,7 @@ layout: default
   <section class="speaker-events">
     {% for event in page.events %}
     <article class="event">
-      <p><span class="event-type type-{{event.type}}">{{event.type}}</span> {{ event.date | date: "%a" }}.
+      <p><span class="event-type type-{{event.type}}">{{event.type}}</span> <span class="event-date">{{ event.date | date: "%a" }}.
         {% assign d = event.date | date: "%-d" %}
         {% case d %}
           {% when '1' or '21' or '31' %}{{ d }}st
@@ -21,7 +21,8 @@ layout: default
           {% when '3' or '23' %}{{ d }}rd
           {% else %}{{ d }}th
         {% endcase %}
-           {{ event.date | date: "%B" }} {{ event.date | date: "%Y" }}</p>
+           {{ event.date | date: "%B" }} {{ event.date | date: "%Y" }}</span>
+          <span class="event-time_start">{{event.time_start}}</span> - <span class="event-time_end">{{event.time_end}}</span></p>
       <h3 class="event-title">{{event.title}}</h3>
       <p class="event-desc">{{event.description}}</p>
     </article>

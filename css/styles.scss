@@ -186,11 +186,16 @@ nav ul li a:hover {
   font-size: 2em;
 }
 
+.event-time_start {
+  margin-left: 2em;
+}
+
 .event-title {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 2em;
   font-weight: bold;
   letter-spacing: .1em;
+  padding: .2em 0;
 }
 
 .event-strapline {

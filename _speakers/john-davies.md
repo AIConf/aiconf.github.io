@@ -21,8 +21,8 @@ events:
   - type: discussion
     title: What is it to be human?
     date: 2018-06-22
-    time_start: 15:00
-    time_end: 16:00
+    time_start: "15:00"
+    time_end: "16:00"
     building: Wells Cathedral
     room: Chapter House
 ---

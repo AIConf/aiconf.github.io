@@ -13,8 +13,8 @@ events:
   - type: workshop
     title: Performance and Intellectual Character - nothing else matters
     date: 2018-06-22
-    time_start: 13:30
-    time_end: 14:30
+    time_start: "13:30"
+    time_end: "14:30"
     building: Music School
     room: Quilter Hall
 ---

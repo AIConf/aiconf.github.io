@@ -41,7 +41,7 @@ $white: rgb(255,255,255);
 $black: rgb(0,0,0);
 $monza: rgb(196,0,35);
 $midnight: rgb(0,27,71);
-$bright-turquoise: rbg(30,226,237);
+$bright-turquoise: rgb(30,226,237);
 
 
 * {
@@ -365,8 +365,13 @@ nav ul li a:hover {
   display: inline-block;
   background-color: $bright-turquoise;
   border-radius: .2em;
+  padding: 0 .5em;
+  color: $white;
 }
 
+.type-keynote {
+  background-color: $monza;
+}
 
 .venue-box {
   display: flex;

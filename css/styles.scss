@@ -173,6 +173,24 @@ nav ul li a:hover {
   };
 }
 
+.splash-time {
+  line-height: normal;
+  font-size: 2em;
+}
+
+.splash-title {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: .1em;
+  padding: .2em 0;
+}
+
+.splash-strapline {
+  line-height: normal;
+  font-size: 1.7em;
+}
+
 .ai {
   color: $monza;
 }
@@ -194,13 +212,7 @@ nav ul li a:hover {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 2em;
   font-weight: bold;
-  letter-spacing: .1em;
   padding: .2em 0;
-}
-
-.event-strapline {
-  line-height: normal;
-  font-size: 1.7em;
 }
 
 .tiles {

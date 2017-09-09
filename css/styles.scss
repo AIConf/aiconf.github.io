@@ -402,6 +402,11 @@ nav ul li a:hover {
 
 .venue-box {
   display: flex;
+  flex-direction: column;
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+  }
 }
 
 .venue-text, .venue-img {
@@ -430,7 +435,7 @@ nav ul li a:hover {
 }
 
 #venue-map {
-  background: url(/assets/img/cath_aerial.png) no-repeat center center;
+  background: url(/assets/img/cedarshall_map.png) no-repeat center center;
   background-size: cover;
 }
 

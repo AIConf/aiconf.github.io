@@ -444,6 +444,12 @@ nav ul li a:hover {
   background-size: cover;
 }
 
+.sponsorship, .schedule {
+  max-width: 80%;
+  margin: auto;
+  padding: 3em 0;
+}
+
 footer {
   clear: both;
   border-top: .5em solid $monza;

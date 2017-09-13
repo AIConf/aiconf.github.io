@@ -90,19 +90,34 @@ h3 {
 }
 
 header {
-  height: 8vh;
+  text-align: center;
   width: 100%;
-  float: left;
   background-color: rgba($black,0.4);
+
+  @include for-tablet-portrait-up {
+    text-align: left;
+    margin-top: 0;
+    height: 8vh;
+    float: left;
+  }
 }
 
 .brand {
+  display: block;
   color: $white;
   padding: 0 1rem;
   float: left;
   letter-spacing: .1em;
   font-weight: bold;
-  @include vertical-align();
+  width: 100%;
+  margin-top: 1.5em;
+
+  @include for-tablet-portrait-up {
+    display: inline;
+    width: auto;
+    margin-top: 0;
+    @include vertical-align();
+  }
 }
 
 .brand a {
@@ -113,11 +128,17 @@ header {
 }
 
 nav {
-  float: right;
-  margin-right: 3em;
+  clear: both;
+  float: none;
   text-transform: uppercase;
   color: $white;
-  @include vertical-align();
+
+  @include for-tablet-portrait-up {
+    float: right;
+    clear: none;
+    margin-right: 3em;
+    @include vertical-align();
+  }
 
   @include for-tablet-landscape-up {
     margin-right: 5em;
@@ -126,12 +147,23 @@ nav {
 
 nav ul {
   list-style-type: none;
+  margin-top: 0;
+
+  @include for-tablet-portrait-up {
+    padding-top: 0;
+  }
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 2em;
   font-weight: bold;
+  display: block;
+  width: 100%;
+  padding: .5em 0;
+
+  @include for-tablet-portrait-up {
+    display: inline;
+    margin: 0 2em;
+  }
 }
 
 nav ul li a {

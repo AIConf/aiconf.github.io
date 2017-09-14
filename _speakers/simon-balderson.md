@@ -9,7 +9,11 @@ organisation: Wells Cathedral School
 twitter: psi_mon
 youtube: https://youtube.com/c/WellsCathedralSchoolMusic
 website: https://wells.cathedral.school
-about: Simon likes, triathlon, music, reading, jelly babies, crosswords, philosophy and computers
+about: >
+<p>Simon has a degree in Philosophy and an MSc in Computing Science. He is currently
+completing an MBA in Educational Leadership and has a particular interest in
+Massive Open Online Courses, adaptive learning systems and the transformative power
+of technology.</p>
 events:
   - type: keynote
     title: Why Machine Learning is going to Eat Your Lunch

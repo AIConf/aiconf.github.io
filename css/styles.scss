@@ -243,6 +243,15 @@ nav ul li a:hover {
   font-size: 1.7em;
 }
 
+.splash-strapline a {
+  text-decoration: none;
+  color: $white;
+}
+
+.splash-strapline a:hover {
+  text-decoration: underline;
+}
+
 .ai {
   color: $monza;
 }

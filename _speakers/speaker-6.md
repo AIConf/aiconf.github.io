@@ -1,6 +1,6 @@
 ---
 layout: speaker
-order: 6
+order: 5
 page-name: speaker-6
 title: Speaker 6
 img: /assets/img/speakers/sample-user.png

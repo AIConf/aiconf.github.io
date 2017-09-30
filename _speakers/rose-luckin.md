@@ -3,13 +3,13 @@ layout: speaker
 order: 2
 page-name: rose-luckin
 title: Rose Luckin
-img: /assets/img/speakers/sample-user.png
+img: /assets/img/speakers/roseluckin.jpg
 role: Professor of Learner Centred Design
 organisation: UCL Knowledge Lab
 twitter: Knowldgillusion
 youtube:
 website: https://iris.ucl.ac.uk/iris/browse/profile?upi=RLUCK37
-about: Prof Rose Luckin has been developing and writing about the Learning Sciences, Educational technology and Artificial Intelligence in Education (AIEd) for over 20 years. Her research explores how to increase participation by teachers and learners in the design and use of technologies. In addition to over 50 peer-reviewed articles and two edited volumes, Prof. Luckin is the author of Re-Designing Learning Contexts (Routledge, 2010), and lead author of the influential Decoding Learning report (Nesta, 2012). Rose is a member of the Welsh Assembly’s Successful Digital Futures group and was previously  a member of the board of BECTA (the British Educational Communications and Technology Agency) and founder and chair of their Research Advisory Group. Rose is a member of the EPSRC college of reviewers and has advised the research councils of various countries on the design and use of educational technologies. Her research applies participatory methods to the development and evaluation of technology for learning. This work is interdisciplinary and encompasses education, psychology, artificial intelligence and HCI.
+about: Rose Luckin is Professor of Learner Centred Design at UCL Knowledge Lab in London. Her research involves the design and evaluation of educational technology using theories from the learning sciences and techniques from Artificial Intelligence (AI). She has a particular interest in using AI to open up the 'black box' of learning to show teachers and students the detail of their progress intellectually, emotionally and socially. Rose is also Director of EDUCATE&#58; a London hub for Educational Technology StartUps, researchers and educators to work together on the development of evidence-based Educational Technology. Rose is lead author of Nesta's influential 'Decoding Learning' report published in 2012 and Pearson's Unleashing Intelligence, published in 2016. She is a UFI charity trustee, a governor and trustee of St Paul's school in London and a governor of the Self-Managed Learning College in Brighton. She has taught in the state secondary, Further Education and Higher Education sectors, and she was previously Pro-Vice Chancellor for Teaching and Learning at the University of Sussex.
 events:
 
 ---

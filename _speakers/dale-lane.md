@@ -1,6 +1,6 @@
 ---
 layout: speaker
-order: 1
+order: 3
 page-name: dale-lane
 title: Dale Lane
 img: /assets/img/speakers/dale-lane.jpg

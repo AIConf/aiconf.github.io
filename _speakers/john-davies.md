@@ -1,6 +1,6 @@
 ---
 layout: speaker
-order: 5
+order: 6
 page-name: john-davies
 title: The Very Revd. Dr John Davies
 img: /assets/img/speakers/sample-user.png

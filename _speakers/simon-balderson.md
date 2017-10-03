@@ -1,6 +1,6 @@
 ---
 layout: speaker
-order: 3
+order: 4
 page-name: simon-balderson
 title: Simon Balderson
 img: /assets/img/speakers/simon-balderson.jpg

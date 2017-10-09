@@ -2,7 +2,7 @@
 layout: speaker
 order: 2
 page-name: rose-luckin
-title: Rose Luckin
+title: Professor Rose Luckin
 img: /assets/img/speakers/roseluckin.jpg
 role: Professor of Learner Centred Design
 organisation: UCL Knowledge Lab

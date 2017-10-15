@@ -19,7 +19,7 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-sitemap"
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -32,4 +32,3 @@ require 'open-uri'
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 gem 'github-pages', versions['github-pages']
-gem 'jekyll-sitemap'

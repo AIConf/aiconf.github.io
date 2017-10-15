@@ -17,7 +17,7 @@ title: AIConf
 email: s.balderson@wells-cathedral-school.com
 description: AIConf is an international conference for educators, exploring the impact that Artificial Intelligence and Machine Learning will have on teaching and learning, as well as society in general.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://aiconf.org/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aiconf.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: aiconf
 github_username:  aiconf
 

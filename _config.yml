@@ -28,6 +28,7 @@ sass:
   style: compressed
 plugins_dir:
   - jekyll-feed
+  - jekyll-sitemap
 collections:
   speakers:
     output: true

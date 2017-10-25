@@ -178,6 +178,10 @@ nav ul li {
 
   @include for-tablet-portrait-up {
     display: inline;
+    margin: 0 1em;
+  }
+
+  @include for-tablet-landscape-up {
     margin: 0 2em;
   }
 }

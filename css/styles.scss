@@ -524,12 +524,21 @@ nav ul li a:visited {
 }
 
 .sponsor-details {
-  margin: 0 5em;
+  margin: 0 1em;
+
+  @include for-tablet-landscape-up {
+    margin: 0 5em;
+  }
 }
 
 .sponsor-details img {
-  width: 26%;
-  margin: 0 2%;
+  width: 50%;
+  margin: auto;
+
+  @include for-tablet-landscape-up {
+    width: 26%;
+    margin: 0 2%;
+  }
 }
 
 footer {

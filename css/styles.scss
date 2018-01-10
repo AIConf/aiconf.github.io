@@ -39,10 +39,13 @@
 
 $white: rgb(255,255,255);
 $black: rgb(0,0,0);
+$gainsboro: rgb(240, 240, 240);
 $monza: rgb(196,0,35);
 $midnight: rgb(0,27,71);
 $bright-turquoise: rgb(30,226,237);
-
+$lime-green: rgb(50, 205, 50);
+$purple: rgb(128, 0, 128);
+$coral: rgb(255, 127, 80);
 
 * {
   margin: 0;
@@ -63,6 +66,11 @@ h3 {
   font-size: 1.5em;
   font-weight: 300;
 }
+
+table { margin-bottom: 2em; }
+th, td { padding: 1em; }
+tr:nth-child(even){background-color: $gainsboro;}
+
 
 .page-title {
   height: 40vh;
@@ -467,6 +475,18 @@ nav ul li a:visited {
 
 .type-keynote {
   background-color: $monza;
+}
+
+.type-breakout {
+  background-color: $lime-green;
+}
+
+.type-demo {
+  background-color: $purple;
+}
+
+.type-talk {
+  background-color: $coral;
 }
 
 .venue-box {

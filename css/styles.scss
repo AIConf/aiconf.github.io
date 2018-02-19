@@ -563,13 +563,41 @@ nav ul li a:visited {
 
 footer {
   clear: both;
-  border-top: .5em solid $monza;
   display: flex;
   flex-direction: column;
 
   @include for-tablet-landscape-up {
     flex-direction: row;
   }
+}
+
+#social {
+  border-top: .5em solid $monza;
+  padding-top: 1em;
+  width: 100%;
+}
+
+#social a {
+  padding: 0.5em;
+  color: $midnight;
+}
+
+#social a:visited { color: $midnight; }
+
+#social a:hover { color: lighten($midnight, 10%); }
+
+.social-info {
+  width: 100%;
+  height: 10vh;
+
+  @include for-phone-only {
+    height: 10vh;
+  }
+}
+
+.social-content {
+  width: 15em;
+  @include horizontal-align();
 }
 
 #footer-logo {

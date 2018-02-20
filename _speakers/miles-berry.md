@@ -14,8 +14,8 @@ events:
 - type: keynote
   title: Teaching AI
   date: 2018-05-19
-  time_start: "10:00"
-  time_end: "11:00"
+  time_start: "15:30"
+  time_end: "16:30"
   building: Cedars Hall
   room: Eavis Auditorium
   description: Miles explores how the computing curriculum can, and should, provide children and young people with a practical knowledge of AI and machine learning and some of the technologies on which they are based. He explores how children as young as five can start to understand AI and looks at how this understanding can be developed as they progress through school. He provides some practical ideas for how children can experiment with AI in class and develop their own simple machine-learning systems using a range of programming environments. Miles considers how pupils can start thinking through some of the ethical implications of AI and recommends that this should be taught alongside the nuts and bolts of how machine learning works.

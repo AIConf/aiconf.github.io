@@ -1,6 +1,6 @@
 ---
 layout: speaker
-order: 5
+order: 7
 page-name: priya-lakhani
 title: Priya Lakhani
 img: /assets/img/speakers/priya-lakhani.jpg

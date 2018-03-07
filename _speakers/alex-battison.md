@@ -1,6 +1,6 @@
 ---
 layout: speaker
-order: 7
+order: 9
 page-name: alex-battison
 title: Alex Battison
 img: /assets/img/speakers/alex-battison.jpg

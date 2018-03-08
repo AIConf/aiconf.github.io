@@ -2,9 +2,9 @@
 layout: speaker
 order: 6
 page-name: simon-rushton
-title: Simon Rushton
-img: /assets/img/speakers/sample-user.png
-role: Associate, Director of Innovation
+title: Staff and Students
+img: /assets/img/speakers/pcsa-logo.jpg
+role: Learners
 organisation: Plymouth School of Creative Arts
 twitter: PSCA_FreeSchool
 youtube:
@@ -12,7 +12,7 @@ website:
 about:
 events:
 - type: keynote
-  title: What next for AI in the classroom?
+  title: AI - Our experience so far and plans for the future
   date: 2018-05-18
   time_start: "17:00"
   time_end: "18:00"
